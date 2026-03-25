@@ -20,7 +20,7 @@ def load_data():
     ]
     
     df = pd.read_parquet(
-        "bts_delayed_flights_only_2018_2025.parquet", 
+        "tiny_dashboard_data.parquet", 
         engine='pyarrow',
         columns=used_cols
     )
